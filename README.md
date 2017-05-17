@@ -196,48 +196,46 @@ Set union, intersection and List concat(partial) are commutative and associative
 
 ```gather```: Before the gather, each process node owns a piece of the data. After the gather, root process owns the entire data.
 
-<img src="docs/pics/gather.png" width="200" height="400" />
-
-![gather](docs/pics/gather.png)
-![t_gather](docs/pics/t_gather.png)
-![map_gather](docs/pics/map_gather.png)
-![t_map_gather](docs/pics/t_map_gather.png)
+<img src="docs/pics/gather.png" width="257" height="514" />
+<img src="docs/pics/t_gather.png" width="517" height="802" />
+<img src="docs/pics/map_gather.png" width="400" height="640" />
+<img src="docs/pics/t_map_gather.png" width="550" height="647" />
 ```allgather```: Before the allgather, each process node owns a piece of the data. After the allgather, all processes own all of the data.
 
-![allgather](docs/pics/allgather.png)
-![t_allgather](docs/pics/t_allgather.png)
-![map_allgather](docs/pics/map_allgather.png)
-![t_map_allgather](docs/pics/t_map_allgather.png)
+<img src="docs/pics/allgather.png" width="257" height="514" />
+<img src="docs/pics/t_allgather.png" width="257" height="514" />
+<img src="docs/pics/map_allgather.png" width="257" height="514" />
+<img src="docs/pics/t_map_allgather.png" width="257" height="514" />
 ```broadcast```: Before the broadcast, only root process owns entire data. After the broadcast, all processes own all of the data.
 
-![broadcast](docs/pics/broadcast.png)
-![t_broadcast](docs/pics/t_broadcast.png)
-![map_broadcast](docs/pics/map_broadcast.png)
-![t_map_broadcast](docs/pics/t_map_broadcast.png)
+<img src="docs/pics/broadcast.png" width="257" height="514" />
+<img src="docs/pics/t_broadcast.png" width="257" height="514" />
+<img src="docs/pics/map_broadcast.png" width="257" height="514" />
+<img src="docs/pics/t_map_broadcast.png" width="257" height="514" />
 ```scatter```: Before the scatter, only root process owns entire data. After scatter, each process owns a piece of the data.
 
-![scatter](docs/pics/scatter.png)
-![t_scatter](docs/pics/t_scatter.png)
-![map_scatter](docs/pics/map_scatter.png)
-![t_map_scatter](docs/pics/t_map_scatter.png)
+<img src="docs/pics/scatter.png" width="257" height="514" />
+<img src="docs/pics/t_scatter.png" width="257" height="514" />
+<img src="docs/pics/map_scatter.png" width="257" height="514" />
+<img src="docs/pics/t_map_scatter.png" width="257" height="514" />
 ```reduce```: Before the reduce, each process owns the data x(i). After the reduce, only root process owns the data of (x(0) + x(1) + … + x(p-1)). "+" is a general reduction operation.
 
-![reduce](docs/pics/reduce.png)
-![t_reduce](docs/pics/t_reduce.png)
-![map_reduce](docs/pics/map_reduce.png)
-![t_map_reduce](docs/pics/t_map_reduce.png)
+<img src="docs/pics/reduce.png" width="257" height="514" />
+<img src="docs/pics/t_reduce.png" width="257" height="514" />
+<img src="docs/pics/map_reduce.png" width="257" height="514" />
+<img src="docs/pics/t_map_reduce.png" width="257" height="514" />
 ```allreduce```: Identical to the reduce, except all the processes own the data of reduced.
 
-![allreduce](docs/pics/allreduce.png)
-![t_allreduce](docs/pics/t_allreduce.png)
-![map_allreduce](docs/pics/map_allreduce.png)
-![t_map_allreduce](docs/pics/t_map_allreduce.png)
+<img src="docs/pics/allreduce.png" width="257" height="514" />
+<img src="docs/pics/t_allreduce.png" width="257" height="514" />
+<img src="docs/pics/map_allreduce.png" width="257" height="514" />
+<img src="docs/pics/t_map_allreduce.png" width="257" height="514" />
 ```reducescatter```:  Identical to the ```reduce```, except each process owns a piece of reduced result.
 
-![reducescatter](docs/pics/reduce-scatter.png)
-![t_reducescatter](docs/pics/t_reduce-scatter.png)
-![map_reducescatter](docs/pics/t_map_reduce-scatter.png)
-![t_map_reducescatter](docs/pics/t_map_reduce-scatter.png)
+<img src="docs/pics/reduce-scatter.png" width="257" height="514" />
+<img src="docs/pics/t_reduce-scatter.png" width="257" height="514" />
+<img src="docs/pics/t_map_reduce-scatter.png" width="257" height="514" />
+<img src="docs/pics/t_map_reduce-scatter.png" width="257" height="514" />
 
 ##### Rpc-based allreduce
 
@@ -348,7 +346,11 @@ We test the performance of collective communications in ytk-mp4j with different 
 
 **All collective communications of 1e9 double array size **
 
-![1e9](docs/pics/performance.png)
+<img src="docs/pics/performance.png" width="257" height="514" />
+
+Tips:
+
+- Using [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related) to render Latex.
 
 ### Reference
 
