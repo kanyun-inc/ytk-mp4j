@@ -196,6 +196,8 @@ Set union, intersection and List concat(partial) are commutative and associative
 
 ```gather```: Before the gather, each process node owns a piece of the data. After the gather, root process owns the entire data.
 
+<img src="docs/pics/gather.png" width="200" height="400" />
+
 ![gather](docs/pics/gather.png)
 ![t_gather](docs/pics/t_gather.png)
 ![map_gather](docs/pics/map_gather.png)
