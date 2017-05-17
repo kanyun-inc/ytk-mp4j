@@ -352,7 +352,7 @@ We test the performance of collective communications in ytk-mp4j with different 
 
 **All collective communications of 1e9 double array size **
 
-<p align="center"> <img src="docs/pics/performance.png" align="center" width="257" height="514" /></p>
+<p align="center"> <img src="docs/pics/performance.png" align="center" width="939" height="1142" /></p>
 
 Tips:
 
