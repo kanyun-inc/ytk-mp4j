@@ -350,9 +350,9 @@ We test the performance of collective communications in ytk-mp4j with different 
 
 
 
-**All collective communications of 1e9 double array size **
+**All collective communications of 1e9 double array size**
 
-<p align="center"> <img src="docs/pics/performance.png" align="center" width="939" height="1142" /></p>
+<p align="center"> <img src="docs/pics/performance.png" align="center" width="619.74" height="753.72" /></p>
 
 Tips:
 
