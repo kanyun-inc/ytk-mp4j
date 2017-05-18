@@ -358,6 +358,16 @@ Tips:
 
 - Using [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related) to render Latex.
 
+### Integration with Maven
+
+```xml
+<dependency>
+  <groupId>com.fenbi.mp4j</groupId>
+  <artifactId>ytk-mp4j</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+
 ### Reference
 
 1. Thakur, Rajeev, Rolf Rabenseifner, and William Gropp. "Optimization of collective communication operations in MPICH." *The International Journal of High Performance Computing Applications* 19.1 (2005): 49-66.
