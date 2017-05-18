@@ -281,7 +281,7 @@ Your serial programs can be easily parallelized and distributed with ytk-mp4j.
 
 ### Communication Complexity
 
-##### Complexity of Process Collective Communications
+##### Complexity of Process Collective Communications（Using [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related) to render Latex）
 
 | Communication  | Connection                             | Transfer               | Computation            | Total                                    |
 | -------------- | -------------------------------------- | ---------------------- | ---------------------- | ---------------------------------------- |
@@ -353,10 +353,6 @@ We test the performance of collective communications in ytk-mp4j with different 
 **All collective communications of 1e9 double array size**
 
 <p align="center"> <img src="docs/pics/performance.png" align="center" width="619.74" height="753.72" /></p>
-
-Tips:
-
-- Using [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related) to render Latex.
 
 ### Integration with Maven
 
