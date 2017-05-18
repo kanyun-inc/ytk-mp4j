@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 mv pom.xml pom.xml.bak
 cp pom.xml.shade pom.xml 
 mvn clean

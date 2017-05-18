@@ -6,11 +6,33 @@
 
     <groupId>com.fenbi.mp4j</groupId>
     <artifactId>ytk-mp4j</artifactId>
-    <version>0.0.16</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>ytk-mp4j</name>
-    <url>http://maven.apache.org</url>
+    <description>Ytk-mp4j is a fast, user-friendly, cross-platform, multi-process, multi-thread collective message passing java library which includes gather, scatter, allgather, reduce-scatter, broadcast, reduce, allreduce communications.</description>
+    <url>https://github.com/yuantiku/ytk-mp4j</url>
+
+    <developers>
+        <developer>
+            <name>xialong</name>
+            <email>glscharoun@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/yuantiku/ytk-mp4j</url>
+        <connection>scm:git:git@github.com:yuantiku/ytk-mp4j.git</connection>
+        <developerConnection>scm:git:git@github.com:yuantiku/ytk-mp4j.git</developerConnection>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -22,7 +44,7 @@
         <repository>
             <id>oss</id>
             <name>oss</name>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
 
@@ -125,6 +147,46 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <locale>zh_CN</locale>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate</id>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                        <phase>site</phase>
+                    </execution>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
 
         </plugins>
     </build>
