@@ -158,7 +158,7 @@ Each process will be assigned a special number—rank which is encoded with lexi
 
 ##### Operand
 
-Ytk-mp4j provides 8 predefined Operands, which almost meets all your needs. If you want to define a new Operand, you can extend ```Operand``` abstract class. ```compress``` is to decide whether the communication uses compression(default is false). To create a ObjectOperand, you must provide a ```serializer``` of Kryo and class type for your object. [Kryo](https://github.com/EsotericSoftware/kryo) is a fast and efficient object graph serialization framework for java. Ytk-learn uses Kryo to serialize and compress objects. More details about predefined Operands see [Operands](docs/ytk-mp4j-docs/index.html).
+Ytk-mp4j provides 8 predefined Operands, which almost meets all your needs. If you want to define a new Operand, you can extend ```Operand``` abstract class. ```compress``` is to decide whether the communication uses compression(default is false). To create a ObjectOperand, you must provide a ```serializer``` of Kryo and class type for your object. [Kryo](https://github.com/EsotericSoftware/kryo) is a fast and efficient object graph serialization framework for java. [ytk-learn](https://github.com/yuantiku/ytk-learn) uses Kryo to serialize and compress objects. More details about predefined Operands see [Operands](docs/ytk-mp4j-docs/index.html).
 
 Using KryoUtils.getDefaultSerializer(Class type) function, you can get serializer easily for most simple objects. 
 
@@ -269,7 +269,7 @@ In the package ```com.fenbi.mp4j.check```, almost all interfaces have a detailed
 
 Your serial programs can be easily parallelized and distributed with ytk-mp4j.
 
-Ytk-learn is a general machine learning library which uses ytk-mp4j to realize distributed version: 
+[ytk-learn](https://github.com/yuantiku/ytk-learn) is a general machine learning library which uses ytk-mp4j to realize distributed version: 
 
 1. Uses allreduce to aggregate the count of instances.
 2. Uses allreduceMap to count frequency of occurrence of all features.
