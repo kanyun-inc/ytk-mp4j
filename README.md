@@ -1,4 +1,4 @@
-Ytk-mp4j is a fast, user-friendly, cross-platform, multi-process, multi-thread collective message passing java library. It's similar to MPI but it has several important features:
+Ytk-mp4j is a fast, user-friendly, cross-platform, multi-process, multi-thread collective message passing java library for distributed machine learning. It's similar to MPI but it has several important features:
 
 1. Supports multi-process, multi-thread message passing at the same time. So you needn't combine ```MPI``` with ```OpenMP``` to use multi-process, multi-thread. Serial codes can easily be paralleled and distributed.
 2. Supports most primitive types and Java Object(```double, float, long, int, short, byte, String, Object```).
