@@ -2,7 +2,7 @@ Ytk-mp4j is a fast, user-friendly, cross-platform, multi-process, multi-thread c
 
 1. Supports multi-process, multi-thread message passing at the same time. So you needn't combine ```MPI``` with ```OpenMP``` to use multi-process, multi-thread. Serial codes can easily be paralleled and distributed.
 2. Supports most primitive types and Java Object(```double, float, long, int, short, byte, String, Object```).
-3. Supports any object message passing as long as you implement ```Serializer``` interface of Kryo.
+3. Supports any object message passing as long as you implement ```Serializer``` interface of [Kryo](https://github.com/EsotericSoftware/kryo).
 4. Supports not only ```array``` data container, but also ```map``` container(used for sparse communication).
 5. Using map container and Object type, you can realize complex operations(e.g. Set Intersection, Set Union,  List concat…).
 6. Supports data compression that can can be used to reduce communication traffic.
