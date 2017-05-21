@@ -251,7 +251,7 @@ More details of collective operations, see  [ThreadCommSlave](docs/ytk-mp4j-docs
 
 ##### Container
 
-Ytk-mp4j supports not only ```array``` data container in which data are arranged in different processes/threads in order, but also supports ```map``` data container which is more powerful and flexible. But it is not efficient, and the order of data in ```map``` data container will not be emphasized.
+Ytk-mp4j supports not only ```array``` data container in which data are arranged in different processes/threads in order, but also supports ```map``` data container which is more powerful and flexible. But it is not efficient, and the order of data in ```map``` data container will not be emphasized. In ThreadCommSlave, all threads in the same process shared the same result(reduce memory use and gc) when using ```map``` container, and if you want to modify in different threads, you must clone a duplicate ahead of modification.
 
 ##### Information
 
