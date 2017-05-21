@@ -297,7 +297,7 @@ where $\alpha$ is network connection latency, $\beta$ is transfer time per byte,
 
 ### Experiments
 
-We test the performance of collective communications in ytk-mp4j with different double array sizes and numbers of slaves using a 1 Gigabit Ethernet. 
+We test the costs of collective communications in ytk-mp4j with different double array sizes and numbers of slaves using a 1 Gigabit Ethernet in milliseconds.
 
 **slaves(#2)**
 
