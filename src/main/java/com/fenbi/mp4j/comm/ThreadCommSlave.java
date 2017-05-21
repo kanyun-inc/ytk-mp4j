@@ -711,7 +711,7 @@ public class ThreadCommSlave {
 
      * @return map list
      *         Attention: all threads in the same process shared the same result(reduce memory use and gc),
-     *                    if you want to modify in different threads, you must clone a duplicate ahead of cloning.
+     *                    if you want to modify in different threads, you must clone a duplicate ahead of modification.
      * @throws Mp4jException
      */
     public <T> List<Map<String, T>> allgatherMap(Map<String, T> mapData, Operand operand) throws Mp4jException {
@@ -937,7 +937,7 @@ public class ThreadCommSlave {
 
      * @return the root map.
      *         Attention: all threads in the same process shared the same result(reduce memory use and gc),
-     *                    if you want to modify in different threads, you must clone a duplicate ahead of cloning.
+     *                    if you want to modify in different threads, you must clone a duplicate ahead of modification.
      * @throws Mp4jException
      */
     public <T> Map<String, T> broadcastMap(Map<String, T> mapData, Operand operand, int rootRank, int rootThreadId) throws Mp4jException {
@@ -2173,7 +2173,7 @@ public class ThreadCommSlave {
 
      * @return key value map, the values which have same key will be reduced together.
      *         Attention: all threads in the same process shared the same result(reduce memory use and gc),
-     *                    if you want to modify in different threads, you must clone a duplicate ahead of cloning.
+     *                    if you want to modify in different threads, you must clone a duplicate ahead of modification.
      * @throws Mp4jException
      */
     public <T> Map<String, T> allreduceMap(Map<String, T> mapData, Operand operand, IOperator operator) throws Mp4jException {
