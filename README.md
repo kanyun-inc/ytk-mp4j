@@ -291,7 +291,7 @@ Your serial programs can be easily parallelized and distributed with ytk-mp4j.
 | reduce-scatter | $(p-1)\alpha$                          | $\frac{p-1}{p}n\beta$  | $\frac{p-1}{p}n\gamma$ | $(p-1)\alpha + \frac{p-1}{p}n\beta +\frac{p-1}{p}n\gamma$ |
 | broadcast      | $ (\lfloor lg(p) \rfloor + p-1)\alpha$ | $2\frac{p-1}{p}n\beta$ | 0                      | $ (\lfloor lg(p) \rfloor + p-1)\alpha + 2\frac{p-1}{p}n\beta $ |
 | reduce         | $ (\lfloor lg(p) \rfloor + p-1)\alpha$ | $2\frac{p-1}{p}n\beta$ | $\frac{p-1}{p}n\gamma$ | $ (\lfloor lg(p) \rfloor + p-1)\alpha + 2\frac{p-1}{p}n\beta + \frac{p-1}{p}n\gamma $ |
-| all reduce     | $2(p-1)\alpha$                         | $2\frac{p-1}{p}n\beta$ | $\frac{p-1}{p}n\gamma$ | $2(p-1)\alpha + 2\frac{p-1}{p}n\beta + \frac{p-1}{p}n\gamma $ |
+| allreduce     | $2(p-1)\alpha$                         | $2\frac{p-1}{p}n\beta$ | $\frac{p-1}{p}n\gamma$ | $2(p-1)\alpha + 2\frac{p-1}{p}n\beta + \frac{p-1}{p}n\gamma $ |
 
 where $\alpha$ is network connection latency, $\beta$ is transfer time per byte,  $n$ is the number of bytes transferred, $\gamma$ is the computation cost per byte for performing the reduction operation.
 
