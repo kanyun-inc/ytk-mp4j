@@ -89,7 +89,7 @@ try {
 return errorCode == 0;
 ```
 
-- In multi-process, multi-thread environment, use code template below to start multi-process, multi-thread communication: 
+- In multi-process, multi-thread environment, use code template below to start multi-process, multi-thread communication(ThreadCommSlave supports multi-process and multi-thread，it contains all of functions of ProcessCommSlave, so you can just use ThreadCommSlave.): 
 
 ```java
 int errorCode = 0;
